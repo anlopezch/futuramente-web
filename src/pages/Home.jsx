@@ -5,6 +5,7 @@ import { departamentos } from '../data/departamentos.js';
 import { asset } from '../utils/assets.js';
 import { useInViewOnce } from '../hooks/useInViewOnce.js';
 import InteractiveMap from "../components/InteractiveMap.jsx";
+import GradientText from '../components/GradientText.jsx';
 
 
 const slides = [
@@ -355,6 +356,75 @@ export default function Home() {
         </div>
       </section>
 
+      <section id="ludix" className="section">
+        <div className="container">
+          <Reveal>
+            <div className="ludix-grid">
+              <div className="ludix-content-col">
+                <div className="ludix-header">
+                  <h2 className="section-title" style={{marginTop: 0, marginBottom: 0}}>Ludix</h2>
+                  <span className="bento-badge" style={{ backgroundColor: 'var(--brand)', display: 'inline-block' }}>
+                    Próximamente
+                  </span>
+                </div>
+                <p>
+                  Transforma el aula en una experiencia que los estudiantes realmente disfrutan. Con Ludix, los colegios puodran gestionar cursos de matemáticas, química, física y más, mientras los estudiantes aprenden jugando con crucigramas, sopas de letras y juegos interactivos. Los profesores siguen el progreso de cada estudiante en tiempo real.
+                </p>
+                <div className="ludix-features">
+                  <div className="ludix-card">
+                    <span className="eyebrow" style={{ color: 'var(--brand)' }}>Visión</span>
+                    <p>Ser la plataforma educativa favorita de colegios y estudiantes, liderando una nueva forma de aprender.</p>
+                  </div>
+                  <div className="ludix-card">
+                    <span className="eyebrow" style={{ color: 'var(--brand)' }}>Propósito</span>
+                    <p>Hacer que aprender sea tan divertido como jugar, sin sacrificar la calidad académica.</p>
+                  </div>
+                </div>
+              </div>
+
+               <div className="ludix-logo-col">
+                <img 
+                  src={asset('assets/img/LUDIX-LOGO.png')} 
+                  alt="Ludix - Plataforma educativa interactiva" 
+                  className="ludix-logo"
+                />
+                <GradientText
+                  colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+                  animationSpeed={35}
+                  showBorder={false}
+                  className="ludix-brand-text"
+                >
+                  Ludix Unal
+                </GradientText>
+              </div>
+
+            </div>
+          </Reveal>
+        </div>
+      </section>
+      <section id="diplomados" className="section section-alt">
+        <div className="container">
+          <Reveal>
+            <div className="card" style={{ textAlign: 'center', maxWidth: '720px', margin: '0 auto' }}>
+              <h2 className="section-title">Nuestros Diplomados</h2>
+              <p style={{ margin: '1rem 0 1.5rem' }}>
+                Ofrecemos diplomados de alta calidad diseñados para profesionales y 
+                estudiantes que buscan profundizar sus conocimientos en áreas clave. 
+                Nuestros programas combinan rigor académico con aplicación práctica, 
+                preparándote para los desafíos del mundo actual.
+              </p>
+              <button 
+                className="btn btn-primary" 
+                type="button" 
+                onClick={() => navigate('/diplomados')}
+              >
+                Conocer diplomados
+              </button>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
       <section id="roadmap" className="section">
         <div className="container">
           <Reveal>
@@ -479,48 +549,6 @@ export default function Home() {
                 <img src={asset("assets/img/aliado-3.png")} alt="Universidad Americana" />
               </li>
             </ul>
-          </Reveal>
-        </div>
-      </section>
-
-      <section id="diplomados" className="section section-alt">
-        <div className="container">
-          <Reveal>
-            <div className="card" style={{ textAlign: 'center', maxWidth: '720px', margin: '0 auto' }}>
-              <h2 className="section-title">Nuestros Diplomados</h2>
-              <p style={{ margin: '1rem 0 1.5rem' }}>
-                Ofrecemos diplomados de alta calidad diseñados para profesionales y 
-                estudiantes que buscan profundizar sus conocimientos en áreas clave. 
-                Nuestros programas combinan rigor académico con aplicación práctica, 
-                preparándote para los desafíos del mundo actual.
-              </p>
-              <button 
-                className="btn btn-primary" 
-                type="button" 
-                onClick={() => navigate('/diplomados')}
-              >
-                Conocer diplomados
-              </button>
-            </div>
-          </Reveal>
-        </div>
-      </section>
-
-      <section id="ludix" className="section">
-        <div className="container">
-          <Reveal>
-            <div className="card" style={{ textAlign: 'center', maxWidth: '720px', margin: '0 auto' }}>
-              <span className="bento-badge" style={{ backgroundColor: 'var(--brand)', display: 'inline-block', marginBottom: '1rem' }}>
-                Próximamente
-              </span>
-              <h2 className="section-title">Ludix 🎮</h2>
-              <p style={{ margin: '1rem 0 0' }}>
-                Ludix es la nueva plataforma educativa de FuturaMente, diseñada para 
-                transformar la experiencia de aprendizaje a través de la gamificación, 
-                el aprendizaje adaptativo y herramientas digitales innovadoras. 
-                Pronto estará disponible para estudiantes y docentes de toda la región.
-              </p>
-            </div>
           </Reveal>
         </div>
       </section>
@@ -687,6 +715,86 @@ export default function Home() {
           /* Make the first cell span full width on mobile for visual balance */
           .cell-1 {
             grid-column: span 2;
+          }
+        }
+
+        .ludix-grid {
+          display: grid;
+          grid-template-columns: 0.8fr 1fr;
+          gap: 60px;
+          align-items: center;
+        }
+        .ludix-logo-col {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .ludix-logo {
+          max-width: 320px;
+          height: auto;
+        }
+        .ludix-brand-text {
+          font-size: 3rem; /* text-5xl */
+          font-weight: 700; /* font-bold */
+          margin-bottom: 1rem; /* mb-4 */
+          margin-top: 1rem;
+          line-height: 1;
+        }
+        @media (min-width: 768px) {
+          .ludix-brand-text { font-size: 3.75rem; /* md:text-6xl */ }
+        }
+        @media (min-width: 1024px) {
+          .ludix-brand-text { font-size: 4.5rem; /* lg:text-7xl */ }
+        }
+        .ludix-header {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 12px;
+          margin-bottom: 1rem;
+        }
+        .ludix-content-col p {
+          text-align: justify;
+          line-height: 1.6;
+        }
+        .ludix-features {
+          margin-top: 2rem;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 20px;
+        }
+        .ludix-card {
+          background: var(--surface, #fff);
+          border: 1px solid var(--border, #eee);
+          border-radius: 16px;
+          padding: 1.5rem;
+          box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        .ludix-card p {
+          margin-top: 0.5rem;
+        }
+
+        @media (max-width: 1023px) {
+          .ludix-grid {
+            grid-template-columns: 1fr;
+            gap: 40px;
+          }
+          .ludix-logo-col {
+            order: -1;
+          }
+          .ludix-logo {
+            max-width: 240px;
+          }
+        }
+
+        @media (max-width: 767px) {
+          .ludix-logo {
+            max-width: 200px;
+          }
+          .ludix-content-col { text-align: left; }
+          .ludix-features {
+            grid-template-columns: 1fr;
           }
         }
       `}</style>
