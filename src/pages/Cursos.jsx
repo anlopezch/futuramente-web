@@ -105,11 +105,11 @@ const COURSES = [
   {
     id: 5,
     title: 'Metodología de Aprendizaje',
-    desc: 'Le damos la más cordial bienvenida a esta guía didáctica diseñada para aprender contenidos fundamentales de las asignaturas de Química y Biología. El presente documento está estructurado en dos grandes bloques temáticos: una primera parte dedicada al aprendizaje de la Química, y una segunda enfocada en contenidos esenciales de Biología',
+    desc: 'Le damos la más cordial bienvenida a esta guía didáctica diseñada para aprender contenidos fundamentales de las asignaturas de Química y Biología. El presente documento está estructurado en dos grandes bloques temáticos: una primera parte dedicada al aprendizaje de la Química, y una segunda enfocada en contenidos esenciales de Biología.',
     shortDesc: [
       'En el área de Química, se abordan temas clave como:',
       'i) Introducción a la química, ii) Estructura atómica y tabla periódica, iii) El lenguaje de la química, iv) La matemática de la química, v) Estados de agregación de la materia, vi) El agua y la concentración de soluciones y vii) Cinética y equilibrio químico.',
-      ' En cuanto a Biología, se desarrollan contenidos vinculados a la comprensión de la vida y los seres vivos, tales como: i) El origen de la vida, ii) Células procariotas y eucariotas, iii) De organismos unicelulares a pluricelulares, iv) La reproducción de los seres vivos, v) La reproducción humana, vi) La salud sexual y reproductiva',
+      ' En cuanto a Biología, se desarrollan contenidos vinculados a la comprensión de la vida y los seres vivos, tales como: i) El origen de la vida, ii) Células procariotas y eucariotas, iii) De organismos unicelulares a pluricelulares, iv) La reproducción de los seres vivos, v) La reproducción humana, vi) La salud sexual y reproductiva.',
       'Cada sección incluye objetivos generales y específicos, actividades iniciales, desarrollo teórico, tareas para el hogar y variedad de materiales complementarios (enlaces y videos gratuitos) que servirán como herramientas para enriquecer los conocimientos adquiridos.',
       ' Esperamos sinceramente que esta guía le sea útil, dinámica y significativa en su formación académica e intelectual.'
     ],
@@ -206,7 +206,7 @@ export default function Cursos() {
   return (
     <section className="section">
       <div className="container">
-        <h1 className="section-title">Cursos</h1>
+        <h1 className="section-title">Nuestros Cursos</h1>
         <p className="section-sub">Explora nuestra oferta académica.</p>
 
         <div className="cursos-accordion">

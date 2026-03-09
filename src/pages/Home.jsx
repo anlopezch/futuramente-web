@@ -329,10 +329,10 @@ export default function Home() {
                 <div style={{ marginBottom: '32px' }}>
                 <span className="eyebrow" style={{ color: 'var(--blue)', fontSize: '1.3rem' }}>FORMACIÓN DE CALIDAD</span>
                 </div>
-                <p className="lead">
+                <p style={{ textAlign: 'justify' }}>
                   Descubre nuestra oferta de cursos diseñados para transformar la educación.
                 </p>
-                <p>
+                <p style={{ textAlign: 'justify' }}>
                   Desde ciencias naturales hasta educación financiera, cada programa combina teoría, 
                   práctica y metodologías innovadoras para un aprendizaje significativo.
                 </p>

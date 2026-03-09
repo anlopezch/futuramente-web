@@ -31,7 +31,6 @@ export default function Drawer({ open, onClose, onGoToSection }) {
             <button className="drawer-link" type="button" onClick={() => closeAnd(() => onGoToSection('roadmap'))}>Etapas</button>
             <button className="drawer-link" type="button" onClick={() => closeAnd(() => onGoToSection('beneficios'))}>Beneficios</button>
             <button className="drawer-link" type="button" onClick={() => closeAnd(() => onGoToSection('aliados'))}>Aliados</button>
-            <button className="drawer-link" type="button" onClick={() => closeAnd(() => onGoToSection('cursos'))}>Cursos</button>
             
           </div>
 
@@ -41,8 +40,11 @@ export default function Drawer({ open, onClose, onGoToSection }) {
             <div className="drawer-row">
               <Link className="drawer-link" to="/cursos" onClick={onClose}>Cursos</Link>
             </div>
-          </div>
 
+            <div className="drawer-row">
+              <Link className="drawer-link" to="/diplomados" onClick={onClose}>Diplomados</Link>
+            </div>
+          </div>
 
           <div className="drawer-group">
             <div className="drawer-group-title">Evidencias</div>
