@@ -11,21 +11,26 @@ export default function Diplomados() {
         </p>
 
         <div className="card" style={{ textAlign: 'center', maxWidth: '720px', margin: '40px auto 0' }}>
-          <p>
-            Estamos trabajando para ofrecerte una experiencia formativa de alto 
-            nivel. Nuestros diplomados están diseñados para profesionales y 
-            estudiantes que buscan profundizar sus conocimientos con programas 
-            rigurosos, flexibles y orientados al mundo real.
+          <h2 className="section-title" style={{ marginTop: 0 }}>Diplomado en Tecnología Educativa</h2>
+          <p style={{ marginTop: '1rem' , textAlign: 'justify' }}>
+            Este diplomado está diseñado para docentes y profesionales de la 
+            educación que buscan integrar herramientas tecnológicas innovadoras 
+            en sus prácticas pedagógicas. A través de un enfoque práctico y 
+            contextualizado, los participantes desarrollarán competencias digitales 
+            para transformar sus entornos de aprendizaje.
           </p>
-          <h2 className="section-title" style={{ color: 'var(--primary)', marginTop: '2rem', fontSize: '1.5rem' }}>
-            🚧 En construcción
-          </h2>
-          <p style={{ marginTop: '0.5rem' }}>
-            Esta sección estará disponible próximamente. Estamos preparando 
-            contenido de calidad para presentarte nuestra oferta de diplomados. 
-            ¡Vuelve pronto!
-          </p>
+          <a
+            href="https://fcen.unal.edu.co/menu/educacion-continua/diplomado-tecnologias-educativa/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-primary"
+            style={{ marginTop: '1.5rem' }}
+          >
+            Ver más información
+          </a>
         </div>
+
+        <hr style={{ margin: '40px auto', maxWidth: '720px', border: 'none', borderTop: '1px solid var(--border)' }} />
 
       </div>
     </section>
